@@ -1,7 +1,28 @@
 <section>
   <div class="container">
-    <div class="column-first">first</div>
-    <div class="column-two">two</div>
-    <div class="column-three">three</div>
+    <div class="column-first">
+      <input
+        type="text"
+        pInputText
+        placeholder="Input Integer number"
+        [(ngModel)]="value1"
+        (keypress)="checkIntegerNumber($event)"
+      />
+      <!-- <span>{{value1}}</span> -->
+    </div>
+    <div class="column-two">
+        
+      <p-dropdown
+        [options]="calculation"
+        placeholder="Select a Calculation"
+        optionLabel="method"
+        [(ngModel)]="selectedMethod"
+        (onChange)="checkCal()"
+      ></p-dropdown>
+      <!-- {{selectedMethod | json}} -->
+    </div>
+    <div class="column-three">
+        {{isTrue}}
+    </div>
   </div>
 </section>

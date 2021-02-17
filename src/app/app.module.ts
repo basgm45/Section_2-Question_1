@@ -8,6 +8,7 @@ import {MenuItem} from 'primeng/api';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {InputTextModule} from 'primeng/inputtext';
 import {DropdownModule} from 'primeng/dropdown';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import {DropdownModule} from 'primeng/dropdown';
     AccordionModule,
     BrowserAnimationsModule,
     InputTextModule,
-    DropdownModule
+    DropdownModule,
+    FormsModule
     
   ],
   providers: [],
